@@ -50,7 +50,7 @@ jobs:
 
     - name: End Build
       run: echo "Build Success"
-          ECR_REPOSITORY: voting-app
+          ECR_REPOSITORY: lks-voting-image
           WORKER_IMAGE_TAG: worker-${{ env.ENV }}-latest
         # Build docker images for vote module and push it to ECR so that it can be deployed to EKS
         run: |
